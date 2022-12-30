@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>php|login|</title>
+    </head>
+<body>
+    <?php
+$us=$_REQUEST['auser'];
+$ps=$_REQUEST['apass'];
+if($us=="admin" && $ps="1234")
+{
+    header("Location:admin.php");
+  exit();
+}
+else{
+    header("location:index.php");
+}
+?>
+</body>
+    </html>
